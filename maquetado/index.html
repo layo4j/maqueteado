@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Autobuses - Inicio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="banner">
+      <img src="images.jfif" alt="Autobús en carretera" />
+    </div>
+    <nav>
+      <ul class="nav-bar">
+        <li>Inicio</li>
+        <li>Rutas y horario</li>
+        <li>Compra de boletos</li>
+        <li>Info. empresa</li>
+        <li>Terminales</li>
+        <li>Áreas de usuario</li>
+        <li>Servicios adicionales</li>
+        <li>Blog y noticias</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="acciones">
+      <input type="text" placeholder="buscar" class="boton" />
+      <button class="boton" onclick="Controller.showPromociones()">promociones</button>
+      <button class="boton" onclick="Controller.showOpiniones()">opiniones</button>
+    </div>
+    <div id="resultado"></div>
+  </main>
+
+  <script src="model.js"></script>
+  <script src="controller.js"></script>
+</body>
+</html>
